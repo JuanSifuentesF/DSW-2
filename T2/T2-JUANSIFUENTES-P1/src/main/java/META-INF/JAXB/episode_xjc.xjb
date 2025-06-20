@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2025.06.20 a las 06:26:24 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/estacionamiento">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.estacionamiento"/>
+    </schemaBindings>
+    <bindings scd="tns:calcularCostoRequest">
+      <class ref="pe.edu.cibertec.ws.estacionamiento.CalcularCostoRequest"/>
+    </bindings>
+    <bindings scd="tns:calcularCostoResponse">
+      <class ref="pe.edu.cibertec.ws.estacionamiento.CalcularCostoResponse"/>
+    </bindings>
+  </bindings>
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.cibertec.edu.pe/ws/utilidades">
+    <schemaBindings map="false">
+      <package name="pe.edu.cibertec.ws.utilidades"/>
+    </schemaBindings>
+    <bindings scd="tns:calcularUtilidadRequest">
+      <class ref="pe.edu.cibertec.ws.utilidades.CalcularUtilidadRequest"/>
+    </bindings>
+    <bindings scd="tns:calcularUtilidadResponse">
+      <class ref="pe.edu.cibertec.ws.utilidades.CalcularUtilidadResponse"/>
+    </bindings>
+  </bindings>
+</bindings>
+
