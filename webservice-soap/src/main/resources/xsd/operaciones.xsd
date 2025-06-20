@@ -1,0 +1,44 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.cibertec.edu.pe/ws/operaciones"
+           targetNamespace="http://www.cibertec.edu.pe/ws/operaciones"
+           elementFormDefault="qualified">
+
+    <!--Operacion de Promedio de notas de cibertec-->
+    <xs:element name="getPromedioRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="t1" type="xs:int"/>
+                <xs:element name="t2" type="xs:int"/>
+                <xs:element name="pf" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getPromedioResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valorPromedio" type="xs:double"/>
+                <xs:element name="estado" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--Operacion para obtener IMC-->
+    <xs:element name="getImcRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="talla" type="xs:int"/>
+                <xs:element name="peso" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getImcResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valorImc" type="xs:double"/>
+                <xs:element name="diagnostico" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+</xs:schema>
